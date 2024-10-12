@@ -14,25 +14,19 @@ const LandingNavBar = () => {
                 <Button onClick={() => navigate("/sign-in")} className="bg-blue-600 hover:bg-blue-700">
                     Sign in
                 </Button>
-                <Navbar.Toggle />
+                {/* <Navbar.Toggle /> */}
             </div>
-            <Navbar.Collapse>
+            {/* <Navbar.Collapse>
                 <Navbar.Link href="#" active className="text-white" aria-label="Home">
                     Home
                 </Navbar.Link>
                 <Navbar.Link href="#" className="text-gray-300 hover:text-white" aria-label="About">
                     About
                 </Navbar.Link>
-                <Navbar.Link href="#" className="text-gray-300 hover:text-white" aria-label="Services">
-                    Services
-                </Navbar.Link>
-                <Navbar.Link href="#" className="text-gray-300 hover:text-white" aria-label="Pricing">
-                    Pricing
-                </Navbar.Link>
                 <Navbar.Link href="#" className="text-gray-300 hover:text-white" aria-label="Contact">
                     Contact
                 </Navbar.Link>
-            </Navbar.Collapse>
+            </Navbar.Collapse> */}
         </Navbar>
     );
 };
