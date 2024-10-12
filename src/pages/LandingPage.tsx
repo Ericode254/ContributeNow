@@ -1,13 +1,14 @@
 import LandingNavBar from "../components/LandingNavBar";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <LandingNavBar />
             <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex items-center justify-center">
                 <div className="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between">
-
-                    {/* Left Section (Text and Buttons) */}
                     <div className="md:w-1/2 text-center md:text-left">
                         <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-wide leading-tight">
                             Showcase Your GitHub Projects to the World
@@ -17,11 +18,11 @@ const LandingPage = () => {
                         </p>
 
                         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center md:justify-start">
-                            <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-lg rounded-md shadow-lg transition transform hover:scale-105">
-                                View Projects
+                            <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-lg rounded-md shadow-lg transition transform hover:scale-105" onClick={() => navigate("/sign-up")}>
+                                Sign up
                             </button>
                             <button className="px-8 py-3 bg-green-600 hover:bg-green-700 text-lg rounded-md shadow-lg transition transform hover:scale-105">
-                                Make Open Source
+                                View Projects
                             </button>
                         </div>
                     </div>
